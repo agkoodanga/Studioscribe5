@@ -3,73 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angiestone Logistics</title>
+    <title>Angiestone Logistics - Modern & Reactive</title>
+    <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="style.css">
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Angiestone Logistics</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+    <!-- ===== Header ===== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Angiestone</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to Angiestone Logistics</h1>
-            <p>Your trusted partner in logistics and supply chain solutions.</p>
-            <p class="disclaimer">This website is for educational purposes only.</p>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Angiestone Logistics is a leading provider of logistics services, offering a wide range of solutions to meet the needs of our clients.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-container">
-                <div class="service-item">
-                    <h3>Freight Forwarding</h3>
-                    <p>We offer reliable and efficient freight forwarding services, ensuring your goods reach their destination on time.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Warehousing</h3>
-                    <p>Our state-of-the-art warehouses provide secure storage for your products.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Customs Brokerage</h3>
-                    <p>We handle all customs-related procedures to ensure a smooth and hassle-free process.</p>
+    <main class="main">
+        <!-- ===== Home ===== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <h1 class="home__title">Angiestone Logistics</h1>
+                    <p class="home__description">Your trusted partner in modern, efficient, and reliable logistics solutions. We move your business forward.</p>
+                    <p class="disclaimer">For Educational Purposes Only</p>
+                    <a href="#contact" class="button">Get a Quote</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        <!-- ===== About ===== -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data fade-in">
+                    <h2 class="section__title">About Angiestone Logistics</h2>
+                    <p class="about__description">We are a forward-thinking logistics company dedicated to providing seamless and innovative supply chain solutions. Our mission is to deliver excellence and value to our customers through a commitment to technology, efficiency, and customer service.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Services ===== -->
+        <section class="services section" id="services">
+            <h2 class="section__title">Our Core Services</h2>
+            <div class="services__container container grid">
+                <div class="services__card fade-in">
+                    <i class='bx bxs-truck' style='font-size: 4rem; color: var(--first-color);'></i>
+                    <h3>Freight Forwarding</h3>
+                    <p>Reliable and efficient air, sea, and land freight forwarding to get your goods where they need to be.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <i class='bx bxs-data' style='font-size: 4rem; color: var(--first-color);'></i>
+                    <h3>Warehousing</h3>
+                    <p>Secure, modern, and scalable warehousing solutions tailored to your inventory needs.</p>
+                </div>
+                <div class="services__card fade-in">
+                    <i class='bx bxs-check-shield' style='font-size: 4rem; color: var(--first-color);'></i>
+                    <h3>Customs Brokerage</h3>
+                    <p>Hassle-free customs clearance with our expert team, ensuring compliance and timely delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Us</h2>
+            <div class="contact__container container grid">
+                <div class="contact__content fade-in">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Your Name" class="contact__form-input">
+                        <input type="email" placeholder="Your Email" class="contact__form-input">
+                        <textarea placeholder="Your Message" class="contact__form-input contact__form-area"></textarea>
+                        <button type="submit" class="button">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Angiestone Logistics. All rights reserved.</p>
-        <p class="disclaimer">This website is for educational purposes only.</p>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Angiestone Logistics</h1>
+            <p class="footer__copy">&#169; 2024 Angiestone. All rights reserved.</p>
+            <p class="disclaimer" style="color: #eee; margin-top: 1rem;">This website is for educational purposes only.</p>
+        </div>
     </footer>
 
+    <!-- ===== JS ===== -->
     <script src="script.js"></script>
 </body>
 </html>
